@@ -6,6 +6,23 @@
     <title>首页</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="./css/me.css">
+    <style>
+        #github svg{
+            transition: all 1s;
+            fill: #222;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+            width: 80px;
+            height: 80px;
+        }
+        #github:hover svg {
+            width: 160px;
+            height: 160px;
+        }
+    </style>
 </head>
 <body>
     <!--导航-->
@@ -262,8 +279,22 @@
             <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 T_i_m_e LaoZhang by Laozhang</p>
         </div>
     </footer>
-
+    <div id="waifu" style="bottom: 0px;">
+        <div id="waifu-tips" class="">鼠…鼠标放错地方了！</div>
+        <canvas id="live2d" width="800" height="800"></canvas>
+        <div id="waifu-tool">
+            <span class="fa fa-lg fa-comment"></span>
+            <span class="fa fa-lg fa-paper-plane"></span>
+            <span class="fa fa-lg fa-user-circle"></span>
+            <span class="fa fa-lg fa-street-view"></span>
+            <span class="fa fa-lg fa-camera-retro"></span>
+            <span class="fa fa-lg fa-info-circle"></span>
+            <span class="fa fa-lg fa-times"></span>
+        </div>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/athlonreg/athlonreg.github.io/js/search.js"></script>
+<script src="./js/autoload.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <script>
     $('.menu.toggle').click(function () {
